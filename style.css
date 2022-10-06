@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@400;700;800&display=swap');
+
+:root{
+    --main-bg-color: #91D7F6;
+    --main-card-color: #41D48B;
+    --link-color: #EBE696;
+    --highlight-link-color: #7DD48B;
+    --highlight-link-bg-color: #91D7F6;
+    --text-color:#EBE696;
+    --main-font: 'Lato', sans-serif;
+}
+
+body{
+    height:100vh;
+    
+    /* Do define a default height */
+    background-color: var(--main-bg-color);
+    font-family: var(--main-font);
+    color:var(--text-color);
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    grid-template-rows: repeat(2);
+    gap: 20px;
+    text-align: center;
+
+}
+
+.card{
+    border-radius: 5%;
+    height: 100%;
+    width: 70%;
+    background-color: var(--main-card-color);
+
+
+}
+
+.container{
+    position: relative;
+    top: 50%;
+    right: 50%;
+    margin-left: 50%;
+    transform: translate(50%, -50%);
+    
+
+}
+.topimage{
+    max-width: 25%;
+    height: auto;
+}
+.title{
+    font-size:25px;
+    font-weight: 400;
+}
+.content{
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.container a{
+    width: auto;
+    text-decoration: none;
+    color: var(--link-color);
+    font: size 20px;;
+    font-weight: 700;
+}
+
+.container a:hover{
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 25%;
+    color: var(--highlight-link-color);
+    background-color: var(--highlight-link-bg-color);
+}
